@@ -1,38 +1,236 @@
 .App {
   text-align: center;
 }
+.side-bar{
+  height:max-content;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(148, 92, 92);
+  border: 1px solid black;
+}
+.side-bar h3{
+ 
+  font-size:xx-large;
+  font-weight: bolder;
+ 
+  left: 0px;
+  position: relative;
+  top: 1px;
+}
+.dash-btn{
+  position: relative;
+  margin-left: 2px;
+  height: 35px;
+  width: 130px;
+  padding: 5px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.dash-btn:hover{
+  font-size: larger;
+  border:  1px solid white;
+  border-radius: 5px;
+}
+.adduser-btn{
+  position: relative;
+  left: 5px;
+  height: 35px;
+  width: 130px;
+  padding: 5px;
+
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+.adduser-btn:hover{
+  font-size: larger;
+  border:  1px solid white;
+  border-radius: 5px;
+}
+.title{
+  height: 30px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(208, 123, 20);
+  border: 1px solid black;
+  font-size: larger;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+.footer{
+  height: 60px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(55, 55, 55);
+color: white;
+font-size: large;
+position: fixed;
+bottom: 0px;
+}
+.user-content{
+  background-color: rgb(222, 222, 222);
+  height:max-content;
+  margin-bottom:15%;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-around;
+}
+.user-content-view{
+  background-color: rgb(222, 222, 222);
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+justify-content: space-around;
+}
+.user-card{
+  border: none;
+  border-radius: 7px;
+  background-color:gray;
+  height: 230px;
+  width: 260px;
+padding: 15px;
+margin: 15px;
+}
+.user-card:hover{
+  padding: 13px;
+}
+.children{
+    height :max-content;
+    margin : 1vh;
+    margin-bottom: 10px;
+    display : flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+btn-group{
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.edit-btn{
+  height: 25px;
+  width: 55px;
+  border: none;
+  padding: 6px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: rgb(12, 240, 35);
+  opacity: 0.8;
+  color: whitesmoke;
+}
+.edit-btn:hover{
+  border: 1px solid white;
+  opacity: 1;
+  color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.view-btn{
+  height: 25px;
+  width: 55px;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: blue;
+  opacity: 0.8;
+  color: whitesmoke;
+}.view-btn:hover{
+  border: 1px solid white;
+  opacity: 1;
+  color: white;
+}
+.del-btn{
+  height: 25px;
+  width: 55px;
+  border: none;
+  padding: 6px;
+  margin-left: 15px;
+  border-radius: 5px;
+  background-color: rgb(203, 45, 28);
+  opacity: 0.8;
+  color: whitesmoke;
+}
+.del-btn:hover{
+  border: 1px solid white;
+  opacity: 1;
+  color: white;
+}
+.input-group{
+  background-color: gray;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.input-group-edit{
+  background-color: rgb(65, 62, 62);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-group-edit input{
+  height: 30px;
+  width: 300px;
+  padding: 7px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: black;
+  font-size: large;
+}
+.input-group-edit input:hover{
+  cursor: pointer;
+  background-color: rgb(185, 185, 185);
+  font-size: larger;
+  
+  font-weight: bold;
+}
+.input-group input{
+  height: 30px;
+  width: 300px;
+  padding: 7px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: black;
+  font-size: large;
+}
+.input-group input:hover{
+  cursor: pointer;
+  background-color: rgb(185, 185, 185);
+  font-size: larger;
+  
+  font-weight: bold;
+}
+.add-btn{
+  margin-top: 15px;
+  height: 30px;
+  width: 150px;
+  background-color: rgb(21, 21, 182);
+  color: whitesmoke;
+  font-size: large;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.add-btn:hover{
+  border: 1px solid white;
+  background-color: blue;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 5px;
 }
